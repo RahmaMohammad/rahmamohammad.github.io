@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahma Mohammad — Portfolio</title>
+  <meta name="description" content="Portfolio of Rahma Mohammad, AI & Computer Science graduate. Projects, experience, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#000000;
+      --ink:#f8d7da;
+      --muted:#f9e2e4;
+      --panel:#1a1a1a;
+      --line:#333333;
+      --radius:18px;
+      --shadow:0 8px 24px rgba(248,215,218,.25);
+      --max:1120px;
+      --gap:28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    html,body{margin:0}
+    body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.7}
+    a{color:var(--ink);text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gap)}
+
+    header{position:sticky;top:0;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+    .brand{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:.15em;text-transform:uppercase}
+    .menu{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+    .menu a{color:var(--ink);font-family:"Space Grotesk",sans-serif;font-size:20px;letter-spacing:.15em;text-transform:uppercase}
+
+    section{padding:80px 0}
+    h2{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:34px;margin:0 0 18px;text-align:center;color:var(--ink)}
+
+    .about-card{background:var(--panel);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:36px;margin:0 auto;max-width:900px;text-align:center}
+
+    .eyebrow{font-family:"Space Grotesk",sans-serif;color:var(--muted);font-size:34px;letter-spacing:.15em;text-transform:uppercase;text-align:center;margin-bottom:20px}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--gap)}
+    .project{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:24px;display:flex;flex-direction:column;gap:10px}
+    .project h3{font-family:"Space Grotesk",sans-serif;font-weight:700;margin:0;color:var(--ink)}
+    .meta{font-size:13px;color:var(--muted)}
+    .actions{margin-top:auto;display:flex;gap:10px}
+    .btn{display:inline-block;padding:10px 14px;border:1px solid var(--ink);border-radius:10px;font-weight:600;color:var(--ink);font-family:"Space Grotesk",sans-serif}
+    .btn.secondary{border-color:var(--muted);color:var(--muted)}
+
+    .contact-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:28px;text-align:center}
+    footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center}
+
+    @media (max-width: 720px){
+      .nav{gap:10px}
+      .menu{gap:16px}
+      h2{font-size:28px}
+      .about-card{padding:24px}
+      .eyebrow{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Rahma Mohammad</div>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="eyebrow">Hey There</div>
+      <div class="about-card">
+        <p>I’m an Artificial Intelligence and Computer Science graduate, and I’m actively building expertise in Python, SQL, data analysis, machine learning, and modern data tools for visualization and reporting. I don’t just want to code, I want to create solutions that are practical, impactful, and a little bit bold.</p>
+        <p>This portfolio is where I bring that vision to life. Through projects like <strong>ResuMatch</strong>, an AI powered resume screening and ranking system, I’ve explored how semantic embeddings and multi factor scoring can make recruitment fairer and more scalable. Every project here represents my curiosity, my commitment to growth, and my excitement for the future of tech.</p>
+        <p>I’m especially excited about opportunities where I can apply both my technical skills and data storytelling abilities to deliver solutions that drive meaningful impact in the real world.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="eyebrow">Projects</div>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>ResuMatch</h3>
+          <div class="meta">Semantic embeddings • Multi‑factor scoring • Python</div>
+          <p>AI powered resume screening and ranking aimed at fairer, scalable shortlisting with clear evaluation notes.</p>
+          <div class="actions">
+            <a class="btn" href="#">Repo</a>
+            <a class="btn secondary" href="#">Demo</a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Data Cleaning & KPI Dashboard</h3>
+          <div class="meta">Python • Pandas • Visualization</div>
+          <p>End to end data prep with a clean KPI dashboard and concise documentation.</p>
+          <div class="actions">
+            <a class="btn" href="#">Repo</a>
+            <a class="btn secondary" href="#">Demo</a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Customer Churn Prediction</h3>
+          <div class="meta">scikit‑learn • Feature engineering • Metrics</div>
+          <p>Baseline classification model with feature importance, cross validation, and next step roadmap.</p>
+          <div class="actions">
+            <a class="btn" href="#">Repo</a>
+            <a class="btn secondary" href="#">Demo</a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Project Title 4</h3>
+          <div class="meta">Tech • Stack • Here</div>
+          <p>Short description of the project. Replace this text when ready.</p>
+          <div class="actions">
+            <a class="btn" href="#">Repo</a>
+            <a class="btn secondary" href="#">Demo</a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Project Title 5</h3>
+          <div class="meta">Tech • Stack • Here</div>
+          <p>Short description of the project. Replace this text when ready.</p>
+          <div class="actions">
+            <a class="btn" href="#">Repo</a>
+            <a class="btn secondary" href="#">Demo</a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Project Title 6</h3>
+          <div class="meta">Tech • Stack • Here</div>
+          <p>Short description of the project. Replace this text when ready.</p>
+          <div class="actions">
+            <a class="btn" href="#">Repo</a>
+            <a class="btn secondary" href="#">Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <div class="contact-card">
+        <p>Email: <a href="mailto:rahmamuhammedsani@gmail.com">rahmamuhammedsani@gmail.com</a> | Phone: <a href="tel:+971565559589">+971565559589</a> | GitHub: <a href="https://github.com/rahmamohammad" target="_blank" rel="noopener">github.com/rahmamohammad</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> Rahma Mohammad</div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
